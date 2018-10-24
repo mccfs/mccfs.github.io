@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html class="mcs-darkpage" lang="en">
+	<head>
+		<link href="https://fonts.googleapis.com/css?family=Open%20Sans:400,300,600" rel="stylesheet" type="text/css">
+		<link href="images/favicon.png" rel="icon" type="image/png">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/mcs-theme.css" rel="stylesheet">
+		<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script src="js/respond.js"></script>
+		<script src="js/shiv.js"></script>
+		<script>
+			$(document).ready(function() {
+				if ($(window).width() < 768) {
+					$('.mcs-navbar').addClass("navbar-inverse");
+				}
+			});
+			$(window).resize(function() {
+				if ($(window).width() < 768) {
+					$('.mcs-navbar').addClass("navbar-inverse");
+				}
+				else {
+					$('.mcs-navbar').removeClass("navbar-inverse");
+				}
+			});
+		</script>
+		<title>Make Change Count for Schools</title>
+	</head>
+	<body class="mcs-darkbody" role="document">
+		<div class="mcs-navbar navbar" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="mcs-navbartoggle navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">Toggle Navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div class="navbar-collapse collapse">
+					<ul class="mcs-navbarlinkgroup nav navbar-nav">
+						<li><a class="mcs-navbarlink" href="about.html">About</a></li>
+						<li><a class="mcs-navbarlink" href="howitworks.html">How it Works</a></li>
+						<li><a class="mcs-navbarlink" href="press.html">Press</a></li>
+						<li><a class="mcs-navbarlink" href="schools.html">Schools</a></li>
+						<li><a class="mcs-navbarlink" href="sponsors.html">Sponsors</a></li>
+						<li><a class="mcs-navbarlink" href="contact.html">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<a href="index.html">
+			<img class="mcs-headerlogo" src="images/header-logo.png" alt="Logo">
+			<img class="mcs-headerlogotext" src="images/header-text.png" alt="Make Change Count for Schools">
+		</a>
+		<div class="mcs-fullpagejumbotron jumbotron">
+			<div class="mcs-frontpagejumbotroncontentcontainer mcs-jumbotroncontentcontainer">
+				<h2 class="mcs-fullpagejumbotronheader">Thank You!</h2>
+				<p class="mcs-fullpagejumbotrondescriptiontext">
+					One of our team members will soon be in contact with you. We're very excited that you're interested in the program, and can't wait to get started!
+				</p>
+			</div>
+		</div>
+	</body>
+</html>

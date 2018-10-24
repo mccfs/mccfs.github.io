@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html class="mcs-lightpage" lang="en">
+	<head>
+		<link href="https://fonts.googleapis.com/css?family=Open%20Sans:400,300,600" rel="stylesheet" type="text/css">
+		<link href="images/favicon.png" rel="icon" type="image/png">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/mcs-theme.css" rel="stylesheet">
+		<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script src="js/respond.js"></script>
+		<script src="js/shiv.js"></script>
+		<script>
+			$(document).ready(function() {
+				if ($(window).width() < 768) {
+					$('.mcs-navbar').addClass("navbar-inverse");
+				}
+			});
+			$(window).resize(function() {
+				if ($(window).width() < 768) {
+					$('.mcs-navbar').addClass("navbar-inverse");
+				}
+				else {
+					$('.mcs-navbar').removeClass("navbar-inverse");
+				}
+			});
+		</script>
+		<title>Press Coverage — Make Change Count for Schools</title>
+	</head>
+	<body class="mcs-lightbody" role="document">
+		<div class="mcs-navbar navbar" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="mcs-navbartoggle navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">Toggle Navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div class="navbar-collapse collapse">
+					<ul class="mcs-navbarlinkgroup nav navbar-nav">
+						<li><a class="mcs-navbarlink" href="about.html">About</a></li>
+						<li><a class="mcs-navbarlink" href="howitworks.html">How it Works</a></li>
+						<li><a class="mcs-activenavbarlink mcs-navbarlink" href="press.html">Press</a></li>
+						<li><a class="mcs-navbarlink" href="schools.html">Schools</a></li>
+						<li><a class="mcs-navbarlink" href="sponsors.html">Sponsors</a></li>
+						<li><a class="mcs-navbarlink" href="contact.html">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<a href="index.html">
+			<img class="mcs-headerlogo" src="images/header-logo.png" alt="Logo">
+			<img class="mcs-headerlogotext" src="images/header-text.png" alt="Make Change Count for Schools">
+		</a>
+		<div class="mcs-headerjumbotron jumbotron">
+			<div class="mcs-headerjumbotroncontentcontainer mcs-jumbotroncontentcontainer">
+				<h2 class="mcs-headerjumbotronheader">Press Coverage</h2>
+			</div>
+		</div>
+		<div class="mcs-panelgridcontainer container-fluid">
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="mcs-panel panel">
+						<div class="mcs-panelheader panel-heading">"Make Change Count Program to Benefit Schools"</div>
+						<div class="mcs-panelbody panel-body">
+							<img src="images/pressphoto-abc10.jpg" class="mcs-panelimage">
+						</div>
+						<ul class="mcs-panellistgroup list-group">
+							<li class="list-group-item">ABC 10 news segment</li>
+							<li class="list-group-item">
+								<a href="https://www.facebook.com/makechangecountforschools/videos/707564969388142/" target="_blank">Watch on facebook.com</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="mcs-panel panel">
+						<div class="mcs-panelheader panel-heading">"Local Teens Create Fundraising Platform Using Parking Meters"</div>
+						<div class="mcs-panelbody panel-body">
+							<img src="images/pressphoto-92129magazine.jpg" class="mcs-panelimage">
+						</div>
+						<ul class="mcs-panellistgroup list-group">
+							<li class="list-group-item"><em>92129 Magazine</em> article</li>
+							<li class="list-group-item">
+								<a href="http://92129magazine.com/2015/10/03/local-teens-create-funding-platform-with-parking-meters/" target="_blank">Read on 92129magazine.com</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="mcs-panel panel">
+						<div class="mcs-panelheader panel-heading">"Charity in the Parking Industry"</div>
+						<div class="mcs-panelbody panel-body">
+							<img src="images/pressphoto-parkingnetwork.jpg" class="mcs-panelimage">
+						</div>
+						<ul class="mcs-panellistgroup list-group">
+							<li class="list-group-item"><em>Parking Network</em> article</li>
+							<li class="list-group-item">
+								<a href="http://www.parking-net.com/parking-industry-blog/charity-in-the-parking-industry" target="_blank">Read on parking-net.com</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

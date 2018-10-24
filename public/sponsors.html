@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html class="mcs-lightpage" lang="en">
+	<head>
+		<link href="https://fonts.googleapis.com/css?family=Open%20Sans:400,300,600" rel="stylesheet" type="text/css">
+		<link href="images/favicon.png" rel="icon" type="image/png">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/mcs-theme.css" rel="stylesheet">
+		<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script src="js/respond.js"></script>
+		<script src="js/shiv.js"></script>
+		<script>
+			$(document).ready(function() {
+				if ($(window).width() < 768) {
+					$('.mcs-navbar').addClass("navbar-inverse");
+				}
+			});
+			$(window).resize(function() {
+				if ($(window).width() < 768) {
+					$('.mcs-navbar').addClass("navbar-inverse");
+				}
+				else {
+					$('.mcs-navbar').removeClass("navbar-inverse");
+				}
+			});
+		</script>
+		<title>Our Sponsors — Make Change Count for Schools</title>
+	</head>
+	<body class="mcs-lightbody" role="document">
+		<div class="mcs-navbar navbar" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="mcs-navbartoggle navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">Toggle Navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div class="navbar-collapse collapse">
+					<ul class="mcs-navbarlinkgroup nav navbar-nav">
+						<li><a class="mcs-navbarlink" href="about.html">About</a></li>
+						<li><a class="mcs-navbarlink" href="howitworks.html">How it Works</a></li>
+						<li><a class="mcs-navbarlink" href="press.html">Press</a></li>
+						<li><a class="mcs-navbarlink" href="schools.html">Schools</a></li>
+						<li><a class="mcs-activenavbarlink mcs-navbarlink" href="#">Sponsors</a></li>
+						<li><a class="mcs-navbarlink" href="contact.html">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<a href="index.html">
+			<img class="mcs-headerlogo" src="images/header-logo.png" alt="Logo">
+			<img class="mcs-headerlogotext" src="images/header-text.png" alt="Make Change Count for Schools">
+		</a>
+		<div class="mcs-headerjumbotron jumbotron">
+			<div class="mcs-headerjumbotroncontentcontainer mcs-jumbotroncontentcontainer">
+				<h2 class="mcs-headerjumbotronheader">Our Sponsors</h2>
+			</div>
+		</div>
+		<div class="mcs-ipsgroupsponsorcontainer mcs-infocontainer">
+			<p>Our program wouldn't be possible without the repurposed parking meters and support generously provided by</p>
+			<a href="http://ipsgroupinc.com">
+				<img src="images/sponsorlogo-ipsgroup.png" class="mcs-ipsgroupsponsorimage" alt="IPS Group">
+			</a>
+		</div>
+		<div class="hidden-xs mcs-sponsorfinancialinformationcontainer mcs-infocontainer">
+			<p>Interested in becoming a sponsor? Take a look below at the benefits we offer sponsors and how we use their donations. To inquire about current sponsorship opportunities and donation amounts, contact our team.</p>
+			<a href="#sponsortiersmodal" class="mcs-sponsorfinancialinformationbutton mcs-actionbutton mcs-button btn-info btn" data-toggle="modal">View Sponsor Tiers</a><br>
+			<a href="#contributionhandlingmodal" class="mcs-lastsponsorfinancialinformationbutton mcs-sponsorfinancialinformationbutton mcs-actionbutton mcs-button btn-info btn" data-toggle="modal">View Contribution History</a>
+			<div class="modal fade" id="contributionhandlingmodal">
+				<div class="modal-dialog">
+					<div class="mcs-modalcontent modal-content">
+						<div class="mcs-modalheader modal-header">
+							<button type="button" class="mcs-modalclose close" data-dismiss="modal" aria-hidden="true">×</button>
+							<h4 class="modal-title" style="font-weight: 600">Sponsor Contribution Handling Information</h4>
+						</div>
+						<div class="mcs-modalbody modal-body">
+							<iframe seamless src="https://docs.google.com/spreadsheets/d/1nw927lDpj9VevZqCiZRyakLyeKxUUqVblnpoKKgs1AA/pubhtml?gid=625894788&amp;single=true&amp;widget=true&amp;headers=false" class="mcs-modalobject"></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal fade" id="sponsortiersmodal">
+				<div class="modal-dialog">
+					<div class="mcs-modalcontent modal-content">
+						<div class="mcs-modalheader modal-header">
+							<button type="button" class="mcs-modalclose close" data-dismiss="modal" aria-hidden="true">×</button>
+							<h4 class="modal-title" style="font-weight: 600">Sponsor Tiers and Benefits</h4>
+						</div>
+						<div class="mcs-modalbody modal-body">
+							<div class="container-fluid">
+								<div class="mcs-sponsortierinformationrow row">
+									<div class="mcs-sponsortierinformationcontainer col-sm-4">
+										<h3 class="mcs-bronzesponsorheader mcs-sponsortierinformationheader">Bronze</h3>
+										<p>Recognition on donation meter plaque, placed in front of school gates</p>
+										<p>Recognition in all official press releases for launch of sponsored meter, including school, district, MCCFS, and IPS Group releases</p>
+									</div>
+									<div class="mcs-sponsortierinformationcontainer col-sm-4">
+										<h3 class="mcs-silversponsorheader mcs-sponsortierinformationheader">Silver</h3>
+										<p>Permanent recognition alongside other silver sponsors in a special section of the MCCFS website</p>
+										<p>Recognition alongside other silver sponsors on the MCCFS Facebook page banner, and in two Facebook posts per year</p>
+										<p><em>Plus all benefits of<br>the Bronze tier</em></p>
+									</div>
+									<div class="mcs-sponsortierinformationcontainer col-sm-4">
+										<h3 class="mcs-goldsponsorheader mcs-sponsortierinformationheader">Gold</h3>
+										<p>Two Facebook posts per year solely for the advertisement of sponsor's product or service</p>
+										<p><em>Plus all benefits of<br>the Silver tier</em></p>
+										<ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="mcs-silversponsorsgroupcontainer mcs-sponsorsgroupcontainer">
+			<h2 class="mcs-silversponsorheader mcs-sponsorsgroupheader">Silver Sponsors</h2>
+			<div class="mcs-sponsorimagegrouprow row">
+				<div class="col-sm-6">
+					<img src="images/sponsorlogo-ranchopenasquitostowncouncil.png" class="mcs-sponsorimage" alt="Rancho Peñasquitos Town Council">
+				</div>
+			</div>
+		</div>
+		<div class="mcs-bronzesponsorsgroupcontainer mcs-sponsorsgroupcontainer">
+			<h2 class="mcs-bronzesponsorheader mcs-sponsorsgroupheader">Bronze Sponsors</h2>
+			<div class="mcs-sponsorimagegrouprow row">
+				<div class="col-sm-6">
+					<img src="images/sponsorlogo-intuit.png" class="mcs-sponsorimage" alt="Intuit">
+				</div>
+				<div class="col-sm-6">
+					<img src="images/sponsorlogo-pqfamilydental-transparent.png" class="mcs-sponsorimage" alt="PQ Family Dental">
+				</div>
+			</div>
+			<div class="mcs-sponsorimagegrouprow row">
+				<div class="col-sm-10">
+					<img src="images/sponsorlogo-kellerwilliamsrealty-extended.png" class="mcs-sponsorimage" alt="Keller Williams Realty — Jodie Vandervort">
+				</div>
+			</div>
+			<div class="mcs-sponsorimagegrouprow row">
+				<div class="col-sm-6">
+					<img src="images/sponsorlogo-smartsolar.png" class="mcs-sponsorimage" alt="Smart Solar of Southern California">
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

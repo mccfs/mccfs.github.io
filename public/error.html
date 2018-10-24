@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html class="mcs-darkpage" lang="en">
+	<head>
+		<link href="https://fonts.googleapis.com/css?family=Open%20Sans:400,300,600" rel="stylesheet" type="text/css">
+		<link href="http://makechangecountforschools.org/images/favicon.png" rel="icon" type="image/png">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="http://makechangecountforschools.org/css/bootstrap.css" rel="stylesheet">
+		<link href="http://makechangecountforschools.org/css/mcs-theme.css" rel="stylesheet">
+		<script src="http://makechangecountforschools.org/js/jquery.js"></script>
+		<script src="http://makechangecountforschools.org/js/bootstrap.js"></script>
+		<script src="http://makechangecountforschools.org/js/respond.js"></script>
+		<script src="http://makechangecountforschools.org/js/shiv.js"></script>
+		<script>
+			$(document).ready(function() {
+				if ($(window).width() < 768) {
+					$('.mcs-navbar').addClass("navbar-inverse");
+				}
+			});
+			$(window).resize(function() {
+				if ($(window).width() < 768) {
+					$('.mcs-navbar').addClass("navbar-inverse");
+				}
+				else {
+					$('.mcs-navbar').removeClass("navbar-inverse");
+				}
+			});
+		</script>
+		<title>Error — Make Change Count for Schools</title>
+	</head>
+	<body class="mcs-darkbody" role="document">
+		<div class="mcs-navbar navbar" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="mcs-navbartoggle navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">Toggle Navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div class="navbar-collapse collapse">
+					<ul class="mcs-navbarlinkgroup nav navbar-nav">
+						<li><a class="mcs-navbarlink" href="http://makechangecountforschools.org/about.html">About</a></li>
+						<li><a class="mcs-navbarlink" href="http://makechangecountforschools.org/howitworks.html">How it Works</a></li>
+						<li><a class="mcs-navbarlink" href="http://makechangecountforschools.org/press.html">Press</a></li>
+						<li><a class="mcs-navbarlink" href="http://makechangecountforschools.org/schools.html">Schools</a></li>
+						<li><a class="mcs-navbarlink" href="http://makechangecountforschools.org/sponsors.html">Sponsors</a></li>
+						<li><a class="mcs-navbarlink" href="http://makechangecountforschools.org/contact.html">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<a href="http://makechangecountforschools.org/index.html">
+			<img class="mcs-headerlogo" src="http://makechangecountforschools.org/images/header-logo.png" alt="Logo">
+			<img class="mcs-headerlogotext" src="http://makechangecountforschools.org/images/header-text.png" alt="Make Change Count for Schools">
+		</a>
+		<div class="mcs-fullpagejumbotron jumbotron">
+			<div class="mcs-frontpagejumbotroncontentcontainer mcs-jumbotroncontentcontainer">
+				<h2 class="mcs-fullpagejumbotronheader">An error has occured</h2>
+				<p class="mcs-fullpagejumbotrondescriptiontext">
+					We were unable to access the resource you were looking for. Try locating the page you're searching for using the navigation bar above.
+				</p>
+			</div>
+		</div>
+	</body>
+</html>
