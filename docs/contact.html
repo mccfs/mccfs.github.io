@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html class="mcs-lightpage" lang="en">
+	<head>
+		<link href="https://fonts.googleapis.com/css?family=Open%20Sans:400,300,600" rel="stylesheet" type="text/css">
+		<link href="images/favicon.png" rel="icon" type="image/png">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="format-detection" content="telephone=no">
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/mcs-theme.css" rel="stylesheet">
+		<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script src="js/respond.js"></script>
+		<script src="js/shiv.js"></script>
+		<script src="js/autosize.js"></script>
+		<script>
+			$(document).ready(function() {
+				if ($(window).width() < 768) {
+					$('.mcs-navbar').addClass("navbar-inverse");
+				}
+				autosize($('.mcs-contactustextarea'));
+			});
+			$(window).resize(function() {
+				if ($(window).width() < 768) {
+					$('.mcs-navbar').addClass("navbar-inverse");
+				}
+				else {
+					$('.mcs-navbar').removeClass("navbar-inverse");
+				}
+			});
+		</script>
+		<title>Contact Us — Make Change Count for Schools</title>
+	</head>
+	<body class="mcs-lightbody" role="document">
+		<div class="mcs-navbar navbar" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="mcs-navbartoggle navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">Toggle Navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div class="navbar-collapse collapse">
+					<ul class="mcs-navbarlinkgroup nav navbar-nav">
+						<li><a class="mcs-darknavbarlink mcs-navbarlink" href="about.html">About</a></li>
+						<li><a class="mcs-darknavbarlink mcs-navbarlink" href="howitworks.html">How it Works</a></li>
+						<li><a class="mcs-darknavbarlink mcs-navbarlink" href="press.html">Press</a></li>
+						<li><a class="mcs-darknavbarlink mcs-navbarlink" href="schools.html">Schools</a></li>
+						<li><a class="mcs-darknavbarlink mcs-navbarlink" href="sponsors.html">Sponsors</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<a href="index.html">
+			<img class="mcs-headerlogo" src="images/header-logo.png" alt="Logo">
+			<img class="mcs-headerlogotext" src="images/header-text.png" alt="Make Change Count for Schools">
+		</a>
+		<div class="hidden-xs pull-left mcs-sidefullpagejumbotron mcs-fullpagejumbotron jumbotron">
+			<div class="mcs-contactuscontactdetails">
+				<span class="glyphicon-phone mcs-contactuscontactdetailsicon glyphicon"></span>  (858) 207-8438<br />
+				<span class="glyphicon-envelope mcs-contactuscontactdetailsicon glyphicon"></span>  info@makechangecountforschools.org<br />
+				<span class="glyphicon-thumbs-up mcs-contactuscontactdetailsicon glyphicon"></span>  <a href="https://www.facebook.com/makechangecountforschools/" class="mcs-contactusfacebooklink">Facebook</a><br />
+			</div>
+		</div>
+		<div class="pull-right mcs-contactuscontentcontainer">
+			<h2 class="mcs-contactusheader">Contact Us</h2>
+			<p class="mcs-contactusdescriptiontext">
+				We're very interested in partnering with new schools. If you want to get started with the program, or just have some questions about it, this is how you get in contact with our team.<span class="hidden-sm hidden-md hidden-lg"> You can also reach us by phone at <span class="mcs-contactusdescriptionstrongtext">(858) 207-8438</span>, or by email at <span class="mcs-contactusdescriptionstrongtext">info@makechangecountforschools.org</span>.</span>
+			</p>
+			<div class="mcs-contactusformcontainer">
+				<form id="mcs-contactusform" action="http://formspree.io/makechangecount4schools@gmail.com" method="post">
+					<input type="hidden" name="_subject" value="Getting Started with MCCFS">
+					<input type="hidden" name="_next" value="http://makechangecountforschools.org/postsubmit.html">
+					<input type="text" name="Name" placeholder="Name" class="mcs-contactusforminput form-control">
+					<input type="email" name="Email Address" placeholder="Email Address" class="mcs-contactusforminput form-control">
+					<textarea form="mcs-contactusform" name="What's up?" rows="1" placeholder="What's up?" class="mcs-contactustextarea mcs-contactusforminput form-control"></textarea>
+					<input type="submit" value="Get in Touch" class="mcs-actionbutton mcs-button btn-success btn">
+				</form>
+			</div>
+		</div>
+	</body>
+</html>

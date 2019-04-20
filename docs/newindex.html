@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<link href="https://fonts.googleapis.com/css?family=Inconsolata|Playfair+Display" rel="stylesheet">
+<style type="text/css">
+h1{
+  font-family: 'Playfair Display', serif;
+}
+p{
+  font-family: 'Inconsolata', monospace;
+}
+
+</style>
+<body>
+
+<div style="margin-left:auto;margin-right:auto;width:750px;height:500px;">
+<h1>Our Locations</h1>
+<p>the rest of our website should be contructed shortly</p>
+<div id="map" style="width:750px;height:500px"></div>
+</div>
+
+</body>
+
+<script>
+function myMap() {
+  var myCenter = new google.maps.LatLng(32.988266, -117.091044);
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {
+    center: myCenter, 
+    zoom: 12, 
+    disableDefaultUI: true,
+    styles: [{"featureType":"landscape.man_made","elementType":"geometry","stylers":[{"color":"#f7f1df"}]},{"featureType":"landscape.natural","elementType":"geometry","stylers":[{"color":"#d0e3b4"}]},{"featureType":"landscape.natural.terrain","elementType":"geometry","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"poi.business","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"poi.medical","elementType":"geometry","stylers":[{"color":"#fbd3da"}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#bde6ab"}]},{"featureType":"road","elementType":"geometry.stroke","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffe15f"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#efd151"}]},{"featureType":"road.arterial","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"road.local","elementType":"geometry.fill","stylers":[{"color":"black"}]},{"featureType":"transit.station.airport","elementType":"geometry.fill","stylers":[{"color":"#cfb2db"}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#a2daf2"}]}]              
+  };
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+var infowindow = new google.maps.InfoWindow();
+
+var locations = [
+     ['Canyon View Elementary', 32.945569, -117.128873, 1],
+     ['Rolling Hills Elementary', 32.990296, -117.092512, 2],
+     ['Park Village Elementary', 32.940808, -117.150869, 3],
+     ['Westwood Elementary', 33.030229, -117.086888, 4],
+    ['Los Penasquitos Elementary', 32.970100, -117.097091, 5]
+];
+
+for (i = 0; i < locations.length; i++) {  
+    marker = new google.maps.Marker({
+         position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+         map: map
+    });
+
+    google.maps.event.addListener(marker, 'click', (function(marker, i) {
+         return function() {
+             infowindow.setContent(locations[i][0]);
+             infowindow.open(map, marker);
+         }
+    })(marker, i));
+}
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBCj9AAf3LIX_60LJgdxyEhgomgO9CeUHg&callback=myMap"></script>
+
+</html>
